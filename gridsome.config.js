@@ -5,29 +5,16 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: "VSBL",
   plugins: [
+    {
+      use: "gridsome-plugin-tailwindcss",
+    },
     {
       use: "@gridsome/source-filesystem",
       options: {
         path: "src/pages/markdown/**/*.md",
         typeName: "Post",
-        remark: {
-          // remark options
-        },
       },
-    },
-    {
-      use: "gridsome-plugin-tailwindcss",
-      /**
-
-      options: {
-        tailwindConfig: './tailwind.config.js',
-        presetEnvConfig: {},
-        shouldImport: false,
-        shouldTimeTravel: false
-      }
-      */
     },
     {
       use: "@gridsome/source-wordpress",

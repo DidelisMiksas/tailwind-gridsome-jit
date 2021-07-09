@@ -1,0 +1,11 @@
+body {
+  font-family: $font;
+  font-style: normal;
+  color: $text-color;
+  line-height: 1.75em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $heading-color;
+  line-height: 1.05;
+}
